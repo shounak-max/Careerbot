@@ -106,10 +106,15 @@ def save_cover_letter_for_specific_job(
 
 
 # Web Search Tools
-@tool("google_search")
-def get_google_search_results(
+
+# Fix: Use Pydantic BaseModel for input schema
+from pydantic import BaseModel
+
+class GoogleSearchInput(BaseModel):
     query: str = Field(..., description="Search query for web")
-) -> str:
+
+@tool("google_search", args_schema=GoogleSearchInput)
+def get_google_search_results(query: str) -> str:
     """
     search the web for the given query and return the search results.
     """
@@ -135,8 +140,13 @@ def get_google_search_results(
     return content
 
 
-@tool("scrape_website")
-def scrape_website(url: str = Field(..., description="Url to be scraped")) -> str:
+
+# Fix: Use Pydantic BaseModel for input schema
+class ScrapeWebsiteInput(BaseModel):
+    url: str = Field(..., description="Url to be scraped")
+
+@tool("scrape_website", args_schema=ScrapeWebsiteInput)
+def scrape_website(url: str) -> str:
     """
     Scrape the content of a website and return the text.
     """

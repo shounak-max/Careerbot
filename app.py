@@ -104,7 +104,7 @@ st.sidebar.markdown(
     """
     <div style="padding:10px 0;">
         If you like the project, give a 
-        <a href="" target="_blank" style="text-decoration:none;">
+        <a href="https://github.com/shounak-max/Careerbot" target="_blank" style="text-decoration:none;">
             ⭐ on GitHub
         </a>
     </div>
