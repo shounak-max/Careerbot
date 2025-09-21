@@ -29,6 +29,8 @@ In today's rapidly evolving job market, finding the right job and standing out f
 
 ## Features
 
+(C:\Users\sujai\OneDrive\Pictures\Screenshots)
+
 - **Personalized Job Search:** Automatically find job listings that match your criteria.
 - **Custom Cover Letters:** Generate cover letters tailored to specific job applications.
 - **Company Research:** Gather and present key information about potential employers.
