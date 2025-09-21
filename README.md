@@ -63,7 +63,7 @@ The GenAI Career Assistant is built on a Supervisor Multi-Agent Architecture. He
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/amanv1906/GENAI-CareerAssistant-Multiagent.git
+   git clone https://github.com/shounak-max/Careerbot.git
    cd GENAI-CareerAssistant-Multiagent
    ```
 
